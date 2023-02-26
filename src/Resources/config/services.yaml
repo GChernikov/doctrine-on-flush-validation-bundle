@@ -1,0 +1,7 @@
+services:
+    gchernikov_doctrine_on_flush_validation.listener:
+        class: GChernikov\DoctrineOnFlushValidationBundle\Listener\EntityValidationListener
+        arguments:
+            $validator: '@validator'
+        tags:
+            - { name: doctrine.event_listener, event: !php/const Doctrine\ORM\Events::onFlush }

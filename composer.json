@@ -1,0 +1,26 @@
+{
+    "name": "gchernikov/doctrine-on-flush-validation-bundle",
+    "description": "Symfony bundle for auto-validating entities on flush",
+    "type": "symfony-bundle",
+    "minimum-stability": "dev",
+    "require": {
+        "doctrine/orm": "^2",
+        "symfony/framework-bundle": "^5|^6",
+        "symfony/validator": "^5|^6"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "GChernikov\\DoctrineOnFlushValidationBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gennady Chernikov",
+            "email": "chernikovg@gmail.com"
+        }
+    ]
+}
